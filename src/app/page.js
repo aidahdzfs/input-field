@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import './globals.css'
+import '@styles/home.css'
 
 export default function Home() {
 
@@ -19,11 +19,11 @@ export default function Home() {
   }
 
   function enterButton(e) {
-    if (e.code == "Enter") handlerGantiNama();
+    if (e.key == "Enter") handlerGantiNama();
   }
 
   return (
-    <div className='body'>
+    <>
       <div className="banner-container">
         <div className="header-banner-wrapper">
           <div className="foto">
@@ -56,6 +56,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-    </div>
+    </>
   )
 }
