@@ -45,7 +45,7 @@ export default function Diary(){
             </ul>
         ):
         (
-            "API ndda"
+            "API loading"
         )}
         
         </>

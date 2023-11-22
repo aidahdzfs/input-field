@@ -61,6 +61,13 @@ p {
   
 }
 
+.cta.active {
+  background-color: #e2e3e6;
+  color: #413d39;
+  cursor: no-drop;
+  font-weight: 700;
+}
+
 input{
   width: 100%;
   height: 2.5rem;
