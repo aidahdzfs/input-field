@@ -27,13 +27,13 @@ export default function Home() {
   let content;
   if (kosong) {
     content = (
-      <button className="cta active">
+      <button className="active-banner">
         <p>ganti nama</p>
       </button>
     );
   } else {
     content = (
-      <button className="cta" onClick={() => {
+      <button className="cta-banner" onClick={() => {
         handlerGantiNama();
       }}>
       <p>ganti nama</p>
@@ -60,8 +60,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="cta">
+        <div className="cta-banner-wrapper">
           <input
+          className='input-banner'
             placeholder='Siapa nama anda?'
             onInput={(val) => handlerInput(val.target.value)}
             onKeyDown={(value) => {
